@@ -2,7 +2,7 @@ $(function () {
     'use strict';
 
     $('.form-group > .pw').on('click', function () {
-        $(this).hasClass('eye-opacity') ? ($(this).removeClass('eye-opacity'), $(this).parent().children('input').attr('type', 'password')) : ($(this).addClass('eye-opacity'), $(this).parent().children('input').attr('type', 'text'));
+        $(this).hasClass('eye-view') ? ($(this).removeClass('eye-view'), $(this).parent().children('input').attr('type', 'password')) : ($(this).addClass('eye-view'), $(this).parent().children('input').attr('type', 'text'));
     });
 
     $('#registerForm').validate({

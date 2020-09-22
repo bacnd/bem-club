@@ -209,13 +209,14 @@ header {
                 right: 55px;
                 top: 46px;
                 cursor: pointer;
+                opacity: 0.4;
                 @media screen and (max-width: 720px) {
                     right: vw(55px);
                     top: vw(46px);
                     width: vw(39px);
                 }
-                &.eye-opacity {
-                    opacity: 0.4;
+                &.eye-view {
+                    opacity: 1;
                 }
             }
             label.error {
