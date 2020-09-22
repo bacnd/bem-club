@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="format-detection" content="telephone=no" />
+        <title>BEM CLUB</title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+
+        <!-- <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.png" /> -->
+
+        <meta name="theme-color" content="#cfc1ac" />
+        <meta name="msapplication-navbutton-color" content="#cfc1ac" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#cfc1ac" />
+
+        <!-- To run web application in full-screen -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <!-- CSS -->
+        <link href="./assets/css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="register">
+        <div id="wrapper">
+            <header>
+                <a href="index.html" class="logo txt-center">
+                    <img class="img-responsive" src="assets/images/logo.png" alt="" />
+                </a>
+            </header>
+            <section id="form">
+                <form class="regForm" role="form" name="registerForm" action="" id="registerForm" method="POST" novalidate="novalidate">
+                    <div class="inputForm">
+                        <div class="txt-center">
+                            <p class="referrer-txt">Người giới thiệu</p>
+                            <p class="referrer-name">Mr NOBODY</p>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="usrname" name="username" placeholder="Tên đăng nhập" autocomplete="off" />
+                            <span class="ic-user"><img src="assets/images/username.png" alt="user" /></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="pwd" name="password" placeholder="Mật khẩu" />
+                            <span class="ic-lock"><img src="assets/images/lock.png" alt="lock" /></span>
+                            <span class="ic-eye pw"><img src="assets/images/eyes.png" alt="eyes" /></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="repeat-pwd" name="repeat_pwd" placeholder="Nhập lại mật khẩu" />
+                            <span class="ic-lock"><img src="assets/images/lock.png" alt="lock" /></span>
+                            <span class="ic-eye pw"><img src="assets/images/eyes.png" alt="eyes" /></span>
+                        </div>
+                    </div>
+                    <div class="btnForm dl-flex">
+                        <button class="btnsubmit" type="submit">
+                            <img src="assets/images/dangky.png" alt="Đăng ký" width="100%" />
+                        </button>
+                        <a href="#"><img src="assets/images/taiios.png" alt="Tải IOS" width="100%" /></a>
+                    </div>
+                </form>
+                <figure class="bonus-txt txt-center"><img src="assets/images/bonus.png" alt="Nhận hoa hồng khủng" /></figure>
+            </section>
+        </div>
+        <!-- JS -->
+        <script src="./assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.validate.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

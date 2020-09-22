@@ -1,0 +1,300 @@
+@charset "utf-8";
+
+@import './base/normalize';
+@import './helpers/variables';
+@import './helpers/mixins';
+@import './helpers/commons';
+
+body {
+    &.register {
+        background: url('../images/bg-1920.jpg') no-repeat;
+        background-size: cover;
+        @media screen and (max-width: 720px) {
+            background: url('../images/bg-720.jpg') no-repeat;
+            background-size: cover;
+            padding-bottom: vw(116px);
+        }
+        #wrapper {
+            background: url('../images/coin.png') center 0 no-repeat;
+            @media screen and (max-width: 720px) {
+                background: url('../images/coin-sp.png') center 0 no-repeat;
+                background-size: contain;
+            }
+            header {
+                padding-top: 8px;
+                @media screen and (max-width: 720px) {
+                    padding-top: vw(116px);
+                }
+            }
+        }
+    }
+    &.install-app {
+        background: url('../images/bg12802.jpg') center 0 no-repeat;
+        background-size: contain;
+        header {
+            padding-top: 40px;
+            @media screen and (max-width: 720px) {
+                padding-top: vw(40px);
+            }
+        }
+    }
+}
+
+header {
+    .logo,
+    .logo2 {
+        &:hover {
+            opacity: 1;
+        }
+        img {
+            @include mlrauto;
+        }
+    }
+    .logo {
+        max-width: 250px;
+        width: 100%;
+        display: block;
+        @include mlrauto;
+        @media screen and (max-width: 720px) {
+            max-width: vw(336px);
+        }
+    }
+    .logo2 {
+        img {
+            @media screen and (max-width: 720px) {
+                width: vw(311px);
+            }
+        }
+    }
+}
+
+#form {
+    margin-top: 12px;
+    @media screen and (max-width: 720px) {
+        margin-top: vw(68px);
+    }
+    #registerForm {
+        font-family: 'UTM Avo', Arial, Helvetica, sans-serif;
+        .inputForm {
+            background: url('../images/pu.png') no-repeat;
+            background-size: 100% 100%;
+            max-width: 610px;
+            width: 100%;
+            min-height: 535px;
+            @include mlrauto;
+            padding-top: 35px;
+            padding-bottom: 56px;
+            @media screen and (max-width: 720px) {
+                max-width: vw(610px);
+                min-height: vw(535px);
+                padding-top: vw(35px);
+                padding-bottom: vw(56px);
+            }
+        }
+        .referrer-txt {
+            color: #ffffff;
+            font-size: 24.5px;
+            @media screen and (max-width: 720px) {
+                font-size: vw(26.5px);
+            }
+        }
+        .referrer-name {
+            color: #fee77d;
+            font-size: 32.5px;
+            margin-bottom: 30px;
+            @media screen and (max-width: 720px) {
+                font-size: vw(35px);
+                margin-bottom: vw(30px);
+            }
+        }
+        .form-group {
+            text-align: center;
+            position: relative;
+            &:nth-of-type(3),
+            &:nth-of-type(4) {
+                padding-top: 10px;
+                margin-top: 5px;
+                @media screen and (max-width: 720px) {
+                    padding-top: vw(10px);
+                    margin-top: vw(5px);
+                }
+            }
+            .form-control {
+                background: url('../images/bg-input.png') center no-repeat;
+                background-size: cover;
+                border: none;
+                color: #ffffff;
+                width: 571px;
+                height: 100px;
+                font-size: 24.5px;
+                text-align: center;
+                padding-bottom: 10px;
+                padding-left: 100px;
+                padding-right: 100px;
+                @media screen and (max-width: 720px) {
+                    width: vw(571px);
+                    height: vw(100px);
+                    font-size: vw(26.5px);
+                    padding-bottom: vw(10px);
+                    padding-left: vw(100px);
+                    padding-right: vw(100px);
+                }
+                &::-webkit-input-placeholder {
+                    /* Chrome/Opera/Safari */
+                    color: #ffffff;
+                }
+                &::-moz-placeholder {
+                    /* Firefox 19+ */
+                    color: #ffffff;
+                }
+                &:-ms-input-placeholder {
+                    /* IE 10+ */
+                    color: #ffffff;
+                }
+                &:-moz-placeholder {
+                    /* Firefox 18- */
+                    color: #ffffff;
+                }
+                &:focus,
+                &:hover {
+                    &::-webkit-input-placeholder {
+                        /* Chrome/Opera/Safari */
+                        color: #73e2fd;
+                    }
+                    &::-moz-placeholder {
+                        /* Firefox 19+ */
+                        color: #73e2fd;
+                    }
+                    &:-ms-input-placeholder {
+                        /* IE 10+ */
+                        color: #73e2fd;
+                    }
+                    &:-moz-placeholder {
+                        /* Firefox 18- */
+                        color: #73e2fd;
+                    }
+                }
+            }
+            .ic-user,
+            .ic-lock,
+            .ic-eye {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            .ic-user {
+                top: 27px;
+                @media screen and (max-width: 720px) {
+                    top: vw(27px);
+                    width: vw(49px);
+                }
+            }
+            .ic-lock {
+                top: 33px;
+                @media screen and (max-width: 720px) {
+                    top: vw(33px);
+                    width: vw(38px);
+                }
+            }
+            .ic-user,
+            .ic-lock {
+                left: 55px;
+                @media screen and (max-width: 720px) {
+                    left: vw(55px);
+                }
+            }
+            .ic-eye {
+                right: 55px;
+                top: 46px;
+                cursor: pointer;
+                @media screen and (max-width: 720px) {
+                    right: vw(55px);
+                    top: vw(46px);
+                    width: vw(39px);
+                }
+                &.eye-opacity {
+                    opacity: 0.4;
+                }
+            }
+            label.error {
+                color: #ff4040;
+                display: block !important;
+                width: 100%;
+                @media screen and (max-width: 720px) {
+                    font-size: vw(22px);
+                }
+            }
+        }
+
+        .btnForm {
+            @include mlrauto;
+            justify-content: center;
+            margin-top: 5px;
+            max-width: 668px;
+            width: 100%;
+            @media screen and (max-width: 720px) {
+                margin-top: vw(27px);
+                max-width: vw(668px);
+            }
+            .btnsubmit {
+                background: none;
+            }
+            a {
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .bonus-txt {
+        margin-top: -15px;
+        @media screen and (max-width: 720px) {
+            margin-top: vw(-15px);
+            max-width: vw(629px);
+            @include mlrauto;
+        }
+    }
+}
+
+#installApp {
+    max-width: 720px;
+    width: 100%;
+    @include mlrauto;
+    text-align: center;
+    margin-bottom: 93px;
+    @media screen and (max-width: 720px) {
+        margin-bottom: vw(93px);
+    }
+    .install-inner {
+        margin-top: 10px;
+        @media screen and (max-width: 720px) {
+            margin-top: vw(10px);
+        }
+        .install-txt {
+            @include mlrauto;
+            @media screen and (max-width: 720px) {
+                width: vw(287px);
+            }
+        }
+        .btn-download-app {
+            margin-top: 18px;
+            display: block;
+            @include mlrauto;
+            @media screen and (max-width: 720px) {
+                margin-top: vw(18px);
+                width: vw(317px);
+            }
+            &:hover {
+                opacity: 1;
+            }
+        }
+        .install-content {
+            @include mlrauto;
+            @media screen and (max-width: 720px) {
+                width: vw(685px);
+            }
+        }
+    }
+}
