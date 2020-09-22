@@ -12,18 +12,18 @@ body {
         @media screen and (max-width: 720px) {
             background: url('../images/bg-720.jpg') no-repeat;
             background-size: cover;
-            padding-bottom: vw(116px);
+            padding-bottom: vw(40px);
         }
         #wrapper {
             background: url('../images/coin.png') center 0 no-repeat;
             @media screen and (max-width: 720px) {
-                background: url('../images/coin-sp.png') center 0 no-repeat;
+                background: url('../images/coin-sp.png') center vw(-30px) no-repeat;
                 background-size: contain;
             }
             header {
                 padding-top: 8px;
                 @media screen and (max-width: 720px) {
-                    padding-top: vw(116px);
+                    padding-top: vw(40px);
                 }
             }
         }
@@ -71,7 +71,7 @@ header {
 #form {
     margin-top: 12px;
     @media screen and (max-width: 720px) {
-        margin-top: vw(68px);
+        margin-top: vw(30px);
     }
     #registerForm {
         font-family: 'UTM Avo', Arial, Helvetica, sans-serif;
