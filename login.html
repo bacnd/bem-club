@@ -21,7 +21,7 @@
         <!-- CSS -->
         <link href="./assets/css/styles.css" rel="stylesheet" />
     </head>
-    <body class="register">
+    <body class="login">
         <div id="wrapper">
             <header>
                 <a href="index.html" class="logo txt-center">
@@ -29,12 +29,8 @@
                 </a>
             </header>
             <section id="form">
-                <form class="regForm" role="form" name="registerForm" action="" id="registerForm" method="POST" novalidate="novalidate">
+                <form class="logForm" role="form" name="loginForm" action="" id="loginForm" method="POST" novalidate="novalidate">
                     <div class="inputForm">
-                        <div class="txt-center">
-                            <p class="referrer-txt">Người giới thiệu</p>
-                            <p class="referrer-name">Mr NOBODY</p>
-                        </div>
                         <div class="form-group">
                             <input type="text" class="form-control" id="usrname" name="username" placeholder="Tên đăng nhập" autocomplete="off" />
                             <span class="ic-user"><img src="assets/images/username.png" alt="user" /></span>
@@ -44,17 +40,12 @@
                             <span class="ic-lock"><img src="assets/images/lock.png" alt="lock" /></span>
                             <span class="ic-eye pw"><img src="assets/images/eyes.png" alt="eyes" /></span>
                         </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="repeat-pwd" name="repeat_pwd" placeholder="Nhập lại mật khẩu" />
-                            <span class="ic-lock"><img src="assets/images/lock.png" alt="lock" /></span>
-                            <span class="ic-eye pw"><img src="assets/images/eyes.png" alt="eyes" /></span>
-                        </div>
                     </div>
                     <div class="btnForm dl-flex">
-                        <button class="btnsubmit" type="submit">
+                        <a href="index.html">
                             <img src="assets/images/dangky.png" alt="Đăng ký" width="100%" />
-                        </button>
-                        <a href="login.html"><img src="assets/images/dangnhap.png" alt="Đăng nhập" width="100%" /></a>
+                        </a>
+                        <button class="btnsubmit" type="submit"><img src="assets/images/dangnhap.png" alt="Đăng nhập" width="100%" /></button>
                     </div>
                 </form>
                 <figure class="bonus-txt txt-center"><img src="assets/images/bonus.png" alt="Nhận hoa hồng khủng" /></figure>

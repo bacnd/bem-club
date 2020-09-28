@@ -6,7 +6,8 @@
 @import './helpers/commons';
 
 body {
-    &.register {
+    &.register,
+    &.login {
         background: url('../images/bg-1920.jpg') no-repeat;
         background-size: cover;
         @media screen and (max-width: 720px) {
@@ -25,6 +26,14 @@ body {
                 @media screen and (max-width: 720px) {
                     padding-top: vw(20px);
                 }
+            }
+        }
+    }
+    &.login {
+        #form {
+            margin-top: 50px;
+            @media screen and (max-width: 720px) {
+                margin-top: vw(50px);
             }
         }
     }
@@ -73,40 +82,14 @@ header {
     @media screen and (max-width: 720px) {
         margin-top: vw(5px);
     }
-    #registerForm {
+    #registerForm,
+    #loginForm {
         font-family: 'UTM Avo', Arial, Helvetica, sans-serif;
         .inputForm {
-            background: url('../images/pu.png') no-repeat;
-            background-size: 100% 100%;
-            max-width: 610px;
-            width: 100%;
-            min-height: 535px;
+            background-size: 100% 100% !important;
             @include mlrauto;
-            padding-top: 35px;
-            padding-bottom: 56px;
-            @media screen and (max-width: 720px) {
-                max-width: vw(610px);
-                min-height: vw(535px);
-                padding-top: vw(35px);
-                padding-bottom: vw(56px);
-            }
         }
-        .referrer-txt {
-            color: #ffffff;
-            font-size: 24.5px;
-            @media screen and (max-width: 720px) {
-                font-size: vw(26.5px);
-            }
-        }
-        .referrer-name {
-            color: #fee77d;
-            font-size: 32.5px;
-            margin-bottom: 30px;
-            @media screen and (max-width: 720px) {
-                font-size: vw(35px);
-                margin-bottom: vw(30px);
-            }
-        }
+
         .form-group {
             text-align: center;
             position: relative;
@@ -228,7 +211,6 @@ header {
                 }
             }
         }
-
         .btnForm {
             @include mlrauto;
             justify-content: center;
@@ -246,6 +228,84 @@ header {
                 &:hover {
                     opacity: 1;
                 }
+            }
+        }
+    }
+
+    #registerForm {
+        .inputForm {
+            background: url('../images/pu.png') no-repeat;
+            max-width: 610px;
+            width: 100%;
+            min-height: 535px;
+            padding-top: 35px;
+            padding-bottom: 56px;
+            @media screen and (max-width: 720px) {
+                max-width: vw(610px);
+                min-height: vw(535px);
+                padding-top: vw(35px);
+                padding-bottom: vw(56px);
+            }
+        }
+        .referrer-txt {
+            color: #ffffff;
+            font-size: 24.5px;
+            @media screen and (max-width: 720px) {
+                font-size: vw(26.5px);
+            }
+        }
+        .referrer-name {
+            color: #fee77d;
+            font-size: 32.5px;
+            margin-bottom: 30px;
+            @media screen and (max-width: 720px) {
+                font-size: vw(35px);
+                margin-bottom: vw(30px);
+            }
+        }
+    }
+
+    #loginForm {
+        .inputForm {
+            background: url('../images/pu2.png') no-repeat;
+            max-width: 610px;
+            width: 100%;
+            min-height: 375px;
+            padding-top: 75px;
+            padding-bottom: 56px;
+            @media screen and (max-width: 720px) {
+                max-width: vw(610px);
+                min-height: vw(375px);
+                padding-top: vw(75px);
+                padding-bottom: vw(56px);
+            }
+        }
+
+        .form-group {
+            .ic-lock {
+                top: 24px;
+                @media screen and (max-width: 720px) {
+                    top: vw(22px);
+                }
+            }
+            .ic-eye {
+                top: 35px;
+                @media screen and (max-width: 720px) {
+                    top: vw(35px);
+                }
+            }
+            & + .form-group {
+                margin-top: 22px;
+                @media screen and (max-width: 720px) {
+                    margin-top: vw(22px);
+                }
+            }
+        }
+
+        .btnForm {
+            margin-top: 30px;
+            @media screen and (max-width: 720px) {
+                margin-top: vw(30px);
             }
         }
     }

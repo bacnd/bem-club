@@ -42,6 +42,29 @@ $(function () {
         },
     });
 
+    $('#loginForm').validate({
+        rules: {
+            username: {
+                required: true,
+            },
+            password: {
+                required: true,
+            },
+        },
+        messages: {
+            username: {
+                required: 'Vui lòng nhập tên đăng nhập',
+            },
+            password: {
+                required: 'Vui lòng nhập mật khẩu',
+            },
+        },
+        // errorElement: 'span',
+        submitHandler: function (form) {
+            form.submit();
+        },
+    });
+
     $(window).load(function () {
         $('html, body').animate({ scrollTop: $(document).height() }, 1000);
     });
